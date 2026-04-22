@@ -1,0 +1,111 @@
+/* --- Header da Página --- */
+.hero-education {
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 60px;
+}
+
+.hero-education h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    letter-spacing: -3px;
+    line-height: 1;
+}
+
+/* --- Bento Grid de Certificações --- */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.cert-card {
+    background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+    border: 1px solid var(--border);
+    padding: 40px;
+    border-radius: 40px;
+    transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cert-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 20px 40px rgba(255, 0, 60, 0.1);
+}
+
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.cert-header i {
+    color: var(--accent);
+    background: rgba(255, 0, 60, 0.1);
+    padding: 15px;
+    border-radius: 18px;
+}
+
+.badge-inst {
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid rgba(255, 0, 60, 0.3);
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.cert-body h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+
+.cert-body p {
+    color: var(--text-sub);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* --- Seção de Aprendizado Prático --- */
+.practical-learning {
+    background: rgba(255,255,255,0.02);
+    border-radius: 50px;
+    padding: 80px 40px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.tech-stack-display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.tech-pill {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 15px 35px;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.tech-pill:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    transform: scale(1.1);
+}
+
+@media (max-width: 850px) {
+    .education-grid { grid-template-columns: 1fr; }
+}

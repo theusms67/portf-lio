@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Matheus Araujo Macedo</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="nav-wrapper" data-aos="fade-down">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="formacao.html">Cursos</a>
+            <a href="projeto.html">Projetos</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+    </div>
+
+    <main class="container">
+        
+        <header class="hero-contact" data-aos="zoom-out">
+            <small class="accent-text" style="letter-spacing: 5px; font-weight: 800;">FALE COMIGO.</small>
+            <h1>Contato<span class="accent-text"></span></h1>
+            <p style="color: var(--text-sub); margin-top: 15px;">Estou disponível para novas oportunidades e desafios na área de tecnologia.</p>
+        </header>
+
+        <div class="contact-wrapper">
+            
+            <div class="contact-info-side" data-aos="fade-right">
+                
+                <div class="info-card">
+                    <i data-lucide="mail"></i>
+                    <div class="info-details">
+                        <span>Email Profissional</span>
+                        <p>matheus.inovamacedo@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i data-lucide="map-pin"></i>
+                    <div class="info-details">
+                        <span>Localização</span>
+                        <p>Três Lagoas - MS</p>
+                    </div>
+                </div>
+
+                <div class="social-links-grid">
+                    <a href="https://wa.me/5567991475887" target="_blank" class="social-btn">
+                        <i data-lucide="message-circle"></i> WhatsApp
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/TEU-PERFIL" target="_blank" class="social-btn">
+                        <i data-lucide="linkedin"></i> LinkedIn
+                    </a>
+
+                    <a href="https://github.com/theusms67" target="_blank" class="social-btn">
+                        <i data-lucide="github"></i> GitHub
+                    </a>
+
+                    <a href="https://www.instagram.com/theus.macedo_?igsh=djYxNTkxdnpqY212&utm_source=qr" target="_blank" class="social-btn">
+                        <i data-lucide="instagram"></i> Instagram
+                    </a>
+                </div>
+
+                <div class="contact-quote">
+                    <p>"Sempre aberto a novas oportunidades e desafios na área de tecnologia. Vamos trabalhar juntos?"</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container" data-aos="fade-left">
+                <h2>Enviar Mensagem</h2>
+                <p style="color: var(--text-sub); margin-bottom: 30px;">Entre em contato e vamos conversar sobre oportunidades.</p>
+
+                <form action="https://formspree.io/f/mlgaonbp" method="POST">
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" name="name" placeholder="Teu nome completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" name="email" placeholder="teu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea name="message" rows="5" placeholder="Como posso ajudar?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        lucide.createIcons();
+    </script>
+</body>
+</html>
